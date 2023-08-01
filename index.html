@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="cursor cursor-default" id="cursor"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+<script>
+
+	setTimeout(() => {
+    
+  
+	const cursor = document.getElementById('cursor');
+	const cursorStyle = cursor.style;
+	const btns=document.getElementsByClassName("btn");
+	const blacken=document.getElementsByClassName("blacken");
+
+	
+	document.addEventListener('mousemove', e => {
+  	window.requestAnimationFrame(() => {
+    cursorStyle.top = `${ e.clientY - cursor.offsetHeight/2 }px`;
+    cursorStyle.left = `${ e.clientX - cursor.offsetWidth/2 }px`;
+  });
+});
+	
+	console.log(btns);
+	btn= Array.from(btns);
+	btn.forEach(but => {
+		but.addEventListener('mouseenter', function() {
+			cursor.classList.add('focus');
+		})
+		but.addEventListener('mouseleave', function() {
+		  cursor.classList.remove('focus');
+		})
+	});
+  
+	
+  blackens= Array.from(blacken);
+  blackens.forEach(blacke => { 
+	  blacke.addEventListener('mouseenter', function() {
+		  cursor.classList.add('cursor-black');
+	  })
+	  blacke.addEventListener('mouseleave', function() {
+		  cursor.classList.remove('cursor-black');
+	  })
+	});
+
+  }, 10000);
+</script>
+
+  </body>
+</html>
