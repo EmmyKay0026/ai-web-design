@@ -25,7 +25,7 @@ export const Pricing = () => {
           <Button className="hero-cta prici-btn btn" children="Enroll Now" />
         </div>
         <div className="right-prici">
-          <div className="prici-img-cont">
+          <div className="right-prici-img-cont">
             <img src={wordpress} alt="" />
           </div>
           <h3>

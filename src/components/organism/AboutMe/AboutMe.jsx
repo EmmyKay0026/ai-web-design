@@ -1,8 +1,9 @@
 import React from "react";
 import emmanuel from "../../../assets/emmanuel.jpg";
-import insta from "../../../assets/instagram.png";
-import linkedin from "../../../assets/linkedin.png";
-import twitter from "../../../assets/twitter.png";
+import { Social } from "../../molecule/Socials/Social";
+// import insta from "../../../assets/instagram.png";
+// import linkedin from "../../../assets/linkedin.png";
+// import twitter from "../../../assets/twitter.png";
 
 export const AboutMe = () => {
   return (
@@ -13,7 +14,7 @@ export const AboutMe = () => {
       <div className="aboutme">
         <h3 className="hero-web-txt-after">Kadiri Emmanuel</h3>
         <p>
-          'm Kadiri Emmanuel, a skillful full-stack developer and web designer
+          I'm Kadiri Emmanuel, a skillful full-stack developer and web designer
           with a passion for mentoring up-coming web designers. With my years of
           experience, I have come to understand the challenges and mistakes
           designers make when starting out.
@@ -34,18 +35,8 @@ export const AboutMe = () => {
           full potential. If you are going to succeed in the web design space,
           this course is where is begins for you. Enroll today.
         </p>
-        {/* <span></span> */}
-        <div className="socials">
-          <a href="https://www.linkedin.com/in/kadiri-o-emmanuel">
-            <img className="btn" src={linkedin} alt="" />
-          </a>
-          <a href=" https://instagram.com/kadiri___emmanuel?igshid=OGY3MTU3OGY1Mw==">
-            <img className="btn" src={insta} alt="" />
-          </a>{" "}
-          <a href="https://twitter.com/emmykay26?t=d39-vq4gUlYRiBrAZCXiLw&s=09">
-            <img className="btn" src={twitter} alt="" />
-          </a>
-        </div>
+
+        <Social className="socials" />
       </div>
     </section>
   );

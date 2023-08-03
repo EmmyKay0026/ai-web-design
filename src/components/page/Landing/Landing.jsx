@@ -7,6 +7,8 @@ import {
   Countdown,
   Pricing,
   AboutMe,
+  LastCta,
+  Footer,
 } from "../../organism/";
 import { HeroSection } from "../../organism/HeroSection/HeroSection";
 
@@ -23,6 +25,8 @@ const Landing = () => {
       <CourseCont />
       <Pricing />
       <AboutMe />
+      <LastCta />
+      <Footer />
     </>
   );
 };

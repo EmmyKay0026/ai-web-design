@@ -38,7 +38,12 @@ h1 {
 img{
   width: 100%;
 }
-
+.bg-img{
+  background-image: url(./assets/blurbg.png);
+  background-position: right ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 /* Cursor */
 .cursor {
 
