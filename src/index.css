@@ -10,7 +10,7 @@
   text-decoration: none;
   list-style: none;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   --black: #2B2B2B;
   --purple-color: #978AC1;
   --thick-orange:#EA4909;
