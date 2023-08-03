@@ -121,7 +121,17 @@ nav{
   font-size: 1.1rem;
   background-color: var(--black);
   color: white;
+  transition: top 0.3s ease-in-out;
   box-shadow: 8px 15px 41px -6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 999;
+}
+.countdown.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 8px 15px 41px -6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
 .countdown-time{
   color: var(--thick-orange);
@@ -339,7 +349,8 @@ display: grid;
   justify-content: space-between;
   align-items: center;
   padding:var(--section-padding) ;
-  padding-top: 6% !important;
+  padding-top: 13% !important;
+
 }
 .teaser-cont h4{
   width: 75%;
@@ -607,6 +618,15 @@ font-size: 1.2rem;
 .socials-foot a{
   width:5%
 }
+/* Contact */
+.cont-cont{
+  width: 5%;
+  position: fixed;
+  z-index: 999;
+  border-radius: 100%;
+  top: 85vh;
+  left: 90vw;
+}
 @media screen and (max-width: 900px) {
   /* Cursor */
   .cursor{
@@ -745,6 +765,12 @@ font-size: 1.2rem;
   .socials-foot a{
     width:40%
   }
+  /* Contact */
+.cont-cont{
+  width: 8%;
+  top: 80vh;
+  left: 90vw;
+}
 
 }
 @media screen and (max-width: 450px) {
@@ -778,7 +804,7 @@ font-size: 1.2rem;
     width: 80%;
   }
   .teaser-img img{
-    transform: translate(75px, -71px) rotate(45deg);
+    transform: translate(75px, -66px) rotate(45deg);
     box-shadow: 0px 7px 15px -3px rgba(0, 0, 0, 0.1);
     opacity: .7;
     
@@ -807,6 +833,9 @@ font-size: 1.2rem;
     .aboutme h3{
       font-size: 2rem;
     }
+    .about-img-cont img{
+      border-bottom-width:31px ;
+    }
     /* Last Cta */
     .cta-cont{
       width: 100%;
@@ -830,4 +859,10 @@ font-size: 1.2rem;
     .socials-foot{
     width: 80%;
   }
+  /* Contact */
+  .cont-cont{
+  width: 10%;
+  top: 87vh;
+  left: 87vw;
+}
 }

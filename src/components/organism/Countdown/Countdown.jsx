@@ -16,6 +16,22 @@ export const Countdown = ({ targetDate }) => {
 
   const [countdown, setCountdown] = useState(calculateCountdown(targetDate));
   const [isActive, setIsActive] = useState(true);
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     let interval = null;
@@ -44,10 +60,7 @@ export const Countdown = ({ targetDate }) => {
   };
 
   return (
-    <div className="countdown">
-      {/* <div>
-        {isActive ? `Countdown to ${targetDate}:` : "Countdown expired!"}
-      </div> */}
+    <div className={`countdown ${isSticky ? "sticky" : ""}`}>
       {isActive && (
         <div>
           Early birds end in{" "}
