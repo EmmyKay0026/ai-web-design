@@ -1,5 +1,4 @@
 export * from "./HeroSection/HeroSection"
-export * from "./Navbar/Navbar"
 export * from "./Clients/Clients"
 export * from "./Testimonial/Testimonial"
 export * from "./Teaser/Teaser"

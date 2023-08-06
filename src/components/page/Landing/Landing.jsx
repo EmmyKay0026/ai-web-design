@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Navbar,
   Testimonial,
   Teaser,
   CourseCont,
@@ -18,7 +17,6 @@ const Landing = () => {
 
   return (
     <>
-      <Navbar />
       <Countdown targetDate={targetDate} />
       <HeroSection />
       <Testimonial />

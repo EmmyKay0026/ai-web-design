@@ -33,7 +33,14 @@ export const AboutMe = () => {
           would be showing you how to maximize your learning in a short period
           of time, empowering designers to hone their skills and reach their
           full potential. If you are going to succeed in the web design space,
-          this course is where is begins for you. Enroll today.
+          this course is where is begins for you.{" "}
+          <a
+            target="__blank"
+            href="https://selar.co/7076v9"
+            className="countdown-cta about btn"
+          >
+            Enroll Now
+          </a>
         </p>
 
         <Social className="socials" />
