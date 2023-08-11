@@ -1,9 +1,6 @@
 import React from "react";
 import emmanuel from "../../../assets/emmanuel.jpg";
 import { Social } from "../../molecule/Socials/Social";
-// import insta from "../../../assets/instagram.png";
-// import linkedin from "../../../assets/linkedin.png";
-// import twitter from "../../../assets/twitter.png";
 
 export const AboutMe = () => {
   return (
@@ -48,3 +45,4 @@ export const AboutMe = () => {
     </section>
   );
 };
+

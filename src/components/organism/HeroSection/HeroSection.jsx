@@ -1,20 +1,13 @@
-import React, { useContext } from "react";
-// import { CursorContext } from "../../molecule/Cursor/Cursor";
+import React from "react";
 import ReactPlayer from "react-player";
 import { Button } from "../../atom/Button/Button";
 import Video from "../../../assets/myvideo.mp4";
+import Thumbsnail from "../../../assets/thumbsnail.png";
 import { Clients } from "../Clients/Clients";
 
 export const HeroSection = () => {
-  // const { isCursorBlack } = useContext(CursorContext);
-
-  // const blackenStyle = {
-  //   isCursorBlack,
-  //   "box-shadow: 0 0 0 3px #000": "transition: all .5s;",
-  // };
   return (
     <section className="hero-sec">
-      {/* <div className="side-bar"></div> */}
       <div className="left-half">
         <span className="hero-pretxt">Learn how to</span>
         <h1>
@@ -29,8 +22,13 @@ export const HeroSection = () => {
         </p>
         <Button className="hero-cta btn" children="Enroll Now" />
       </div>
-      <div>
-        <ReactPlayer url={Video} controls={true} className="hero-video" />
+      <div className="right-half">
+        <ReactPlayer
+          light={<img src={Thumbsnail} />}
+          url={Video}
+          controls={true}
+          className="hero-video btn"
+        />
         <Clients />
       </div>
     </section>

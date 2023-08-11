@@ -10,7 +10,6 @@
   text-decoration: none;
   list-style: none;
 
-  /* color-scheme: light dark; */
   --black: #2B2B2B;
   --purple-color: #978AC1;
   --thick-orange:#EA4909;
@@ -20,11 +19,6 @@
 
 
   --section-padding: 0 6% 5%;
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
 }
 
 body, nav{
