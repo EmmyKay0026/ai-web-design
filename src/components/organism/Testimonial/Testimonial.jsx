@@ -1,6 +1,6 @@
 import React from "react";
 import { TestionialCards } from "../../molecule/Testimonial Cards/TestionialCards";
-// import image from "../../../assets/imgg.jpg";
+import shulammite from "../../../assets/shulammite.jpg";
 import adetola from "../../../assets/adetola.jpg";
 import ojovictor from "../../../assets/ojovictor.jpg";
 import { Button } from "../../atom/Button/Button";
@@ -10,12 +10,12 @@ export const Testimonial = () => {
     <section className="test-sec blacken bg-img">
       <h2>Testimonials</h2>
       <div className="testimonials">
-        {/* <TestionialCards
-          imgg={image}
-          h4Name="Testing Names"
-          spanCont="CEO of Trives"
-          pCont="With our years of experience in solar installation we focus more on extending battery performance to at"
-        /> */}
+        <TestionialCards
+          imgg={shulammite}
+          h4Name="Shulammite Ughojo"
+          spanCont="UI/UX and Web designer"
+          pCont="Mr Emmanuel is a skilled and devoted tutor, and thanks to his guidance, I can confidently handle web design projects independently."
+        />
         <TestionialCards
           imgg={adetola}
           h4Name="Adetola Ayodele"

@@ -798,6 +798,17 @@ font-size: 1.2rem;
     width: initial !important;
     height: initial !important;
   }
+  /* Testimonials */
+  .scrolling-clint, .clients{
+    width:100%;
+  }
+  .card-bott-part p{
+    font-size:1rem ;
+  }
+  .card-name h4{
+    font-size: 1.3rem;
+    line-height: 1.3em;
+  }
   /* Teaser */
   .teaser-cont {
     flex-direction: column;
