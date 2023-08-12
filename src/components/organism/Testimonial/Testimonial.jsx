@@ -14,7 +14,7 @@ export const Testimonial = () => {
           imgg={shulammite}
           h4Name="Shulammite Ughojo"
           spanCont="UI/UX and Web designer"
-          pCont="Mr Emmanuel is a skilled and devoted tutor, and thanks to his guidance, I can confidently handle web design projects independently."
+          pCont="I’ve had the privilege of knowing Mr Emmanuel for four months, and during that time, I’ve always been amazed his technical expertise. He is passionate about learning and sharing his knowledge with others."
         />
         <TestionialCards
           imgg={adetola}
