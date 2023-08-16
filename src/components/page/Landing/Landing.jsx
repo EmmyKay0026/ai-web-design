@@ -11,6 +11,7 @@ import {
 } from "../../organism/";
 import { HeroSection } from "../../organism/HeroSection/HeroSection";
 import { Contact } from "../../molecule/Contact/Contact";
+import Popup from "../../molecule/PopUp/PopUp";
 
 const Landing = () => {
   const targetDate = "2023-09-01T23:59:59"; // Replace with your desired target date
@@ -19,6 +20,7 @@ const Landing = () => {
     <>
       <Countdown targetDate={targetDate} />
       <HeroSection />
+      <Popup delay={9000} />
       <Testimonial />
       <Teaser />
       <CourseCont />

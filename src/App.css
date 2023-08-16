@@ -773,7 +773,14 @@ font-size: 1.2rem;
   top: 80vh;
   left: 90vw;
 }
+ /* Popup */
+ .popup-cont {
+   width: 84vw !important;
+ }
 
+ .popup-whatsapp {
+   width: 90% !important;
+ }
 }
 @media screen and (max-width: 450px) {
   .cursor{
@@ -880,6 +887,13 @@ font-size: 1.2rem;
     top: 87vh;
     left: 84vw;
   }
+  /* Popup */
+  .popup-cont{
+  width: 94vw !important;
+  }
+.popup-whatsapp {
+  width: 90% !important;
+}
 }
 
 @media screen and (max-width: 1112px) and (min-width:901px) {
@@ -890,10 +904,94 @@ font-size: 1.2rem;
     .left-half h1{
       font-size: 3.4rem;
     }
+    /* Popup */
+    .popup-cont h2{
+ font-size: 2rem;
+}
+.popup-cont p{
+ font-size: 1rem;
+}
+.popup-cont {
+  height: 50% !important ;
+}
 }
 @media screen and (max-width: 647px) and (min-width:451px) {
     .hero-video {
       width: 90vw !important;
       height: 330px !important;
     }
+}
+
+.popup {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #391a386b;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: opacity 2s ease-in-out;
+}
+.popup p{
+  filter: blur(0);
+}
+.popup.visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-content{
+  background-color: #DDDDDD;
+  border-radius: 10px;
+
+}
+.popup-cont{
+  width: 60vw;
+  /* height: 30%; */
+  padding: 1% 10% 10%;
+}
+.popup-cont h2{
+ font-size: 2.4rem;
+}
+.popup-cont p{
+ font-size: 1.2rem;
+}
+.popup-whatsapp{
+  display: flex;
+  width: 40%;
+  text-decoration: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--black);
+  align-items: center;
+  transition: all .5s;
+  justify-content: center;
+  padding: 6px 0;
+  cursor: pointer; 
+}
+.popup-whatsapp:hover {
+  border: 1px solid #DDDDDD;
+  background-color: var(--black);
+}
+
+.popup-whatsapp button{
+  font-size: 1.1rem;
+  border: 0px;
+  background-color: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+.popup-whatsapp button:hover{
+  color: #DDDDDD;
+}
+
+.popup-close{
+  position: relative;
+  top: 30px;
+  left: 90%;
+  font-size: 2rem;
 }
