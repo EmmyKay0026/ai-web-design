@@ -20,7 +20,7 @@ const Landing = () => {
     <>
       <Countdown targetDate={targetDate} />
       <HeroSection />
-      <Popup delay={20000} />
+      <Popup delay={10000} />
       <Testimonial />
       <Teaser />
       <CourseCont />

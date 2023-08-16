@@ -18,13 +18,16 @@ const Popup = ({ delay }) => {
   };
 
   return (
-    <div className={`popup ${isVisible ? "visible" : ""}`}>
+    <div
+      onClick={handleClose}
+      className={`popup ${isVisible ? "visible" : ""}`}
+    >
       <div className="popup-content">
         <span onClick={handleClose} className="btn popup-close">
           &times;
         </span>
         <div className="popup-cont">
-          <h2>Do you have a question?</h2>
+          <h2>Speak with the course host</h2>
           <p>
             If you have any inquiries as regards the classes or registration
             process, there is a WhatsApp button located at the bottom right
