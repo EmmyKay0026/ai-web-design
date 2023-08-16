@@ -7,9 +7,9 @@ export const Teaser = () => {
     <div className="teaser-cont">
       <div>
         <h4>
-          Learn how to build professional websites that can increase the of your
-          business and personal endeavors. Take advantage of AI tools to create
-          bespoke website for your business and for clients.
+          Learn how to build professional websites that can increase the revenue
+          of your business and personal endeavors. Take advantage of AI tools to
+          create bespoke website for your business and for clients.
         </h4>
         <Button className="teaser-btn btn" children="Enroll Now" />
       </div>

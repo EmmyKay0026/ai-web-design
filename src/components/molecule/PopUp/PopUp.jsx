@@ -20,15 +20,15 @@ const Popup = ({ delay }) => {
   return (
     <div className={`popup ${isVisible ? "visible" : ""}`}>
       <div className="popup-content">
-        <span onClick={handleClose} className="popup-close">
+        <span onClick={handleClose} className="btn popup-close">
           &times;
         </span>
         <div className="popup-cont">
           <h2>Do you have a question?</h2>
           <p>
-            If you have any inquiries as regards about our classes or the
-            registration process, there is a WhatsApp button located at the
-            bottom right corner of your screen. You can also send a message now.
+            If you have any inquiries as regards the classes or registration
+            process, there is a WhatsApp button located at the bottom right
+            corner of your screen. You can also send a message now.
           </p>
           <div className="d-flex popup-cta">
             {/* <Button children="Enroll Now" className="nav-btn" /> */}

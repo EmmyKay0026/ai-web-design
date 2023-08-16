@@ -24,10 +24,10 @@ export const HeroSection = () => {
       </div>
       <div className="right-half">
         <ReactPlayer
-          light={<img src={Thumbsnail} />}
           url={Video}
           controls={true}
           className="hero-video btn"
+          autoPlay
         />
         <Clients />
       </div>
