@@ -18,7 +18,7 @@ const Landing = () => {
 
   return (
     <>
-      <Countdown targetDate={targetDate} />
+      {/* <Countdown targetDate={targetDate} /> */}
       <HeroSection />
       <Popup delay={10000} />
       <Testimonial />
