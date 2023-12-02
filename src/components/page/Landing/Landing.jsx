@@ -14,11 +14,11 @@ import { Contact } from "../../molecule/Contact/Contact";
 import Popup from "../../molecule/PopUp/PopUp";
 
 const Landing = () => {
-  const targetDate = "2023-09-01T23:59:59"; // Replace with your desired target date
+  const targetDate = "2024-09-01T23:59:59"; // Replace with your desired target date
 
   return (
     <>
-      {/* <Countdown targetDate={targetDate} /> */}
+      <Countdown targetDate={targetDate} />
       <HeroSection />
       <Popup delay={10000} />
       <Testimonial />
